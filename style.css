@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,600;0,700;0,800;1,100;1,200;1,500;1,600;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #fff;
+    height: 60px;
+}
+.left-section {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.left-section img {
+    width: 100px;
+    height: 25px; 
+    margin-left: 10px;
+}
+.mid-section  {
+    display: flex;
+    align-items: center;
+    margin-left: -9%; /* space between fl header te9sim les section 9ad 9ad w ena 
+    hajti bel espace ben section 1 et 2 asgher men 3 w 4 donc na3mel margin negative bech temchy bel3aks*/
+} 
+.mid-section form {
+    display: flex;
+    width: 628px;
+    height: 40px;
+}
+.mid-section input {
+    width: 100%;
+    border-radius: 2px 0 0 2px;
+    padding: 12px;
+    font-size: 1.6em;
+    border: 1px solid #d3d3d3;
+    border-right: none;
+}
+.mid-section button {
+    border:1px solid #d3d3d3 ;
+    width: 64px;
+    border-radius: 0 2px 2px 0;
+    padding-top: 5px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    transition: 0.6s ease;
+}
+.mid-section button:hover {
+    border-color: #c6c6c6;
+    background-color: #f0f0f0;
+}
+.mid-section .mic {
+    background-color: #f8f8f8;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center; /*n7ot lmic f center ta3 doura*/
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.right-section a {
+    color: black;
+    padding-right: 10px;
+    text-decoration: none;
+    
+}
+
+.container {
+    height: calc(100vh - 60px);
+    display: flex;
+    background-color: #f9f9f9;
+}
+aside {
+     
+    height: 100%;
+    background-color: white;
+    width: 280px;
+    overflow-y: auto; /*lhajet zeyda ala toul ya3mel automatiquement scroll */
+    }
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /*les liens tat baadhhom*/
+    margin: 15px 0;
+    padding-right: 20px;
+    }
+.nav-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 10px 16px;
+
+    }
+.nav-link span {
+    margin-left: 24px;
+    font-size: 1.4em;
+    line-height: 2em; /*irtife3 lkelma*/
+    font-weight: 400;
+}
+
+.active {
+    background-color: #e5e5e5;
+    
+}
+#active-span {
+    font-weight: 700;
+}
+.nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+hr {
+    height: 1px;
+    background-color: #e5e5e5;
+    border: none;
+}
+nav p {
+    font-size: 1.4rem;
+    color: #606060;
+    font-weight: 500;
+    padding: 8px 16px;
+    text-transform: uppercase;
+}
+.channel_img {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    padding: 35px 15px;
+    border-top: 1px solid #ddd;
+    overflow-y: auto;
+}
+.videos-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /*kif space between 
+    juste lfar9 between ta3ml espace bin l3anasser
+    w around 9bal w ba3d l3anasser espace.*/
+    flex-wrap: wrap;
+}
+.video {
+    width: 320px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.thumbnail {
+    width : 100%;
+    height: 187px;
+    margin-bottom: 12px;
+} 
+.thumbnail img {
+    height: 100%;
+    width: 100%;
+}
+.video-details {
+    display: flex;
+    /* align-items: center; */
+    /* width: 100%; */
+}
+.creator-img img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+}
+
+.title a {
+    text-decoration: none;
+}
+.video-title {
+    color: rgb(3, 3, 3);
+    font-weight: 500;
+    font-size: 1.6rem;
+    max-width: 217px;
+    line-height: 2.2rem;
+    margin-bottom: 4px;
+    overflow: hidden;
+    display: -webkit-box; /*bech najmou nesta3mlouha aal chrome*/
+    -webkit-line-clamp: 2; /*ken titre lvideo akther men 2 ligne ya3mel
+    clamp yaani y9oss lvideo*/
+    -webkit-box-orient: vertical; /*y7ot 3 points */
+}
+.vide-creator, .title span {
+    color: rgb(96, 96, 96);
+    font-size: 1.4rem;
+    font-weight: 2rem;
+    font-weight: 400;
+}
+.vide-creator:hover {
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
